@@ -109,10 +109,19 @@ button {
 
 .main {
   display: flex; }
+  @media only screen and (max-width: 26em) {
+    .main {
+      flex-direction: column; } }
   .main-left {
     width: 50%; }
+    @media only screen and (max-width: 26em) {
+      .main-left {
+        width: 100%; } }
   .main-right {
     width: 50%; }
+    @media only screen and (max-width: 26em) {
+      .main-right {
+        width: 100%; } }
     .main-right .allergo {
       margin: 3rem 0 5rem 5rem;
       border-bottom: 1px solid rgba(0, 0, 0, 0.377);
