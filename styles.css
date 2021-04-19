@@ -1,0 +1,230 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 36.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 90%; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; }
+
+button {
+  cursor: pointer; }
+
+.header {
+  display: flex;
+  align-items: center;
+  background: #111;
+  color: #ddd;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden; }
+  .header-title {
+    font-size: 2.3rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    padding: 1rem; }
+    @media only screen and (max-width: 36.5em) {
+      .header-title {
+        margin-left: 0; } }
+  .header-form {
+    display: flex;
+    align-items: center;
+    width: 28%; }
+  .header-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 2.6rem; }
+  .header-label {
+    border: none;
+    outline: none;
+    background-color: red; }
+    .header-label-svg {
+      padding: 0.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      fill: #ddd; }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem; }
+    @media only screen and (max-width: 36.5em) {
+      .header-nav {
+        font-size: 1.2rem; } }
+    .header-nav-item {
+      margin: 0 1rem 0 1rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.541);
+      padding-right: 1rem; }
+      @media only screen and (max-width: 26em) {
+        .header-nav-item {
+          margin: 0;
+          padding: 0.5rem; } }
+      .header-nav-item:last-child {
+        border-right: none; }
+
+.login {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.5rem; }
+  .login-rig {
+    background: #058805;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #ddd; }
+  .login-new {
+    background: #111;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: rgba(221, 221, 221, 0.363); }
+  .login-btn {
+    border: none;
+    font-size: 1.5rem; }
+
+.map {
+  height: 50vh;
+  background: url(./img/map.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .map-temp {
+    color: #ddd;
+    font-size: 3rem; }
+
+.main {
+  display: flex; }
+  .main-left {
+    width: 50%; }
+  .main-right {
+    width: 50%; }
+    .main-right .allergo {
+      margin: 3rem 0 5rem 5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+      padding-bottom: 3rem; }
+      .main-right .allergo-goto {
+        width: 26%;
+        background: #5d8b18;
+        border: none; }
+        .main-right .allergo-goto-svg {
+          width: 2rem;
+          fill: #fff;
+          height: 2rem; }
+      .main-right .allergo-title {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 2rem; }
+        .main-right .allergo-title .light {
+          font-size: 1.5rem;
+          color: rgba(0, 0, 0, 0.562); }
+      .main-right .allergo-data {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-family: "Share Tech Mono", monospace; }
+        .main-right .allergo-data span {
+          margin: 0.5rem; }
+    .main-right .services-heading {
+      font-size: 3rem;
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+      padding: 1rem; }
+      .main-right .services-heading-svg {
+        height: 3rem;
+        width: 3rem;
+        margin: 0.5rem; }
+    .main-right .services-step {
+      margin-top: 3rem;
+      margin-left: 5rem; }
+      .main-right .services-step-item {
+        width: 25%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #ddd; }
+        .main-right .services-step-item-1 {
+          background: #3333fa; }
+        .main-right .services-step-item-2 {
+          background: #df4c07; }
+        .main-right .services-step-item-3 {
+          background: #111; }
+    .main-right .services-data {
+      display: flex;
+      flex-direction: column;
+      margin-left: 5rem;
+      font-size: 1.5rem;
+      font-family: "Share Tech Mono", monospace; }
+      .main-right .services-data span {
+        margin: 0.5rem; }
+    .main-right .ports-heading {
+      font-size: 3rem;
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+      padding: 1rem; }
+      .main-right .ports-heading-svg {
+        height: 3rem;
+        width: 3rem;
+        margin: 0.5rem; }
+    .main-right .ports-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; }
+    .main-right .ports-item {
+      font-size: 1.5rem;
+      padding: 1rem;
+      background: #458fbd;
+      margin-right: 1rem;
+      color: white;
+      font-weight: 500; }
+      .main-right .ports-item:first-child {
+        margin-left: 5rem; }
+  .main-ip {
+    font-size: 3rem;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    padding: 1rem; }
+    .main-ip-svg {
+      height: 3rem;
+      width: 3rem;
+      margin: 0.5rem; }
+  .main-info-item {
+    display: flex;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.377); }
+    .main-info-item-heading {
+      width: 30%;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.815); }
+    .main-info-item-matter {
+      width: 70%;
+      font-weight: 500; }
+
+.footer {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.678);
+  font-weight: 500;
+  padding: 1rem; }
+
+.margin-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.356);
+  padding-top: 1rem; }
